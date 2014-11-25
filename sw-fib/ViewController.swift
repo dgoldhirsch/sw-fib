@@ -10,6 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var k: Int!
+    var result: Int!
+    @IBOutlet weak var fibonacci: UILabel!
+    
+    @IBAction func input(sender: AnyObject) {
+        self.k = sender.integerValue
+        self.result = k * 100
+        self.fibonacci.text = "ABCD"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
